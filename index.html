@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Where are my skills in demand?</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Where are my skills in demand?">
+  <meta name="author" content="K. Mitchell">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Where are my skills in demand?</h1>
+    <h2>Number of job listings in US major cities</h2>
+    <p>K. Mitchell<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Two questions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Two of the most important questions facing us are:</p>
+
+<p>Where should I live?<br>
+and<br>
+what will I do?    </p>
+
+<p>These questions are related in that certain industries are focused in specific geographical areas; in the United States, the automobile industry is centered in Detroit, and the oil industry is focused in Texas.  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The application is accessible online at the URL below:</p>
+
+<p><a href="https://mitchki.shinyapps.io/project/">https://mitchki.shinyapps.io/project/</a></p>
+
+<p>To use it, simply enter any keywords that relate to a job of interest and click submit.  The application then polls the Indeed.com job board for those keywords and show the number of current job listings in the 24 largest United States metropolitan areas.</p>
+
+<p>The application also provides an option to select the radius around the city so that opportunities in the city&#39;s suburbs can be included in the search.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>So, for example, if you within a 10 mile radius of Memphis for data scientist jobs, you find that there are only:</p>
+
+<pre><code>## [1] &quot;158&quot;
+</code></pre>
+
+<p>Whereas, if you look within the same radius of Seattle, there are currently quite a few more!     </p>
+
+<pre><code>## [1] &quot;2420&quot;
+</code></pre>
+
+<p>So if you want to find a job as a data scientist, you&#39;re better off in Seattle!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The Data (References)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The 24 largest United States metropolitan areas were selected based on the U.S. 2010 census.                                </p>
+
+<p>The data on job listings is obtained via the API provided by Indeed.com, arguably the world&#39;s largest job board, combining results from thousands of websites.<br>
+<span id=indeed_at><a href="http://www.indeed.com/">jobs</a> by <a
+href="http://www.indeed.com/" title="Job Search"><img
+src="http://www.indeed.com/p/jobsearch.gif" style="border: 0;
+vertical-align: middle;" alt="Indeed job search"></a></span></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Two questions'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Data (References)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
