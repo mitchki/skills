@@ -3,7 +3,7 @@ title       : Where are my skills in demand?
 subtitle    : Number of job listings in US major cities
 author      : K. Mitchell
 job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012      # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
@@ -50,7 +50,7 @@ So, for example, if you within a 10 mile radius of Memphis for data scientist jo
 
 
 ```
-## [1] "158"
+## [1] "160"
 ```
 
 
@@ -58,10 +58,20 @@ Whereas, if you look within the same radius of Seattle, there are currently quit
 
 
 ```
-## [1] "2420"
+## [1] "2419"
 ```
 
-So if you want to find a job as a data scientist, you're better off in Seattle!
+So if you want to find a job as a data scientist, you're better off in Seattle, because Seattle has approximately
+
+```r
+    as.integer(SeattleResults) %/% as.integer(MemphisResults)
+```
+
+```
+## [1] 15
+```
+times as many data science jobs!
+
 
 ---
 

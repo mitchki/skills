@@ -3,7 +3,7 @@ title       : Where are my skills in demand?
 subtitle    : Number of job listings in US major cities
 author      : K. Mitchell
 job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012      # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
@@ -58,8 +58,8 @@ pre <- "http://api.indeed.com/ads/apisearch?publisher=6660716131600223&q="
 cityState <- "Memphis,TN"
     fileUrl <- paste(pre,keyword,mid,perimeter,"&l=",cityState,post,sep="")
     doc <- htmlTreeParse(fileUrl,useInternal=TRUE)
-    totalresults <- xpathSApply(doc,"//totalresults",xmlValue) 
-    totalresults
+    MemphisResults <- xpathSApply(doc,"//totalresults",xmlValue) 
+    MemphisResults
 ```
 
 
@@ -69,11 +69,16 @@ Whereas, if you look within the same radius of Seattle, there are currently quit
 cityState <- "Seattle,WA"
     fileUrl <- paste(pre,keyword,mid,perimeter,"&l=",cityState,post,sep="")
     doc <- htmlTreeParse(fileUrl,useInternal=TRUE)
-    totalresults <- xpathSApply(doc,"//totalresults",xmlValue) 
-    totalresults
+    SeattleResults <- xpathSApply(doc,"//totalresults",xmlValue) 
+    SeattleResults
 ```
 
-So if you want to find a job as a data scientist, you're better off in Seattle!
+So if you want to find a job as a data scientist, you're better off in Seattle, because Seattle has approximately
+```{r echo=TRUE, eval=TRUE}
+    as.integer(SeattleResults) %/% as.integer(MemphisResults)
+```
+times as many data science jobs!
+
 
 ---
 

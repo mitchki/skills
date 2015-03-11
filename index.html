@@ -82,15 +82,23 @@ what will I do?    </p>
   <article data-timings="">
     <p>So, for example, if you within a 10 mile radius of Memphis for data scientist jobs, you find that there are only:</p>
 
-<pre><code>## [1] &quot;158&quot;
+<pre><code>## [1] &quot;160&quot;
 </code></pre>
 
 <p>Whereas, if you look within the same radius of Seattle, there are currently quite a few more!     </p>
 
-<pre><code>## [1] &quot;2420&quot;
+<pre><code>## [1] &quot;2419&quot;
 </code></pre>
 
-<p>So if you want to find a job as a data scientist, you&#39;re better off in Seattle!</p>
+<p>So if you want to find a job as a data scientist, you&#39;re better off in Seattle, because Seattle has approximately</p>
+
+<pre><code class="r">    as.integer(SeattleResults) %/% as.integer(MemphisResults)
+</code></pre>
+
+<pre><code>## [1] 15
+</code></pre>
+
+<p>times as many data science jobs!</p>
 
   </article>
   <!-- Presenter Notes -->
